@@ -6,29 +6,45 @@ This project is a backend system built using **FastAPI** that enables patients t
 
 ---
 
-## 🚀 Features
+## ✅ Implemented Features
 
-### 🔐 Authentication
+## 🔐 Authentication
 
-- User Registration
-- User Login
+* User Registration
+* User Login
 
-### 👨‍⚕️ Doctor Management
+## 👨‍⚕️ Doctor Management (CRUD Operations)
 
-- Create Doctor
-- View All Doctors
-- Update Doctor
-- Delete Doctor
+* Create Doctor
+* View All Doctors
+* Update Doctor
+* Delete Doctor
+
+## 🗓️ Doctor Schedule Management
+
+* Manage doctor availability and schedules
+
+## 🔍 Doctor Search
+
+* Search doctors by specialization
+
+## 📅 Appointment Management
+
+* Book Appointments
+* Cancel Appointments
+
+## 📜 Patient Features
+
+* View Appointment History
 
 
-### ✅ Additional Capabilities
+## ⚙️ **Additional Capabilities**
 
-- Input Validation
-- Error Handling
-- Scalable API Design
+* Input Validation
+* Error Handling
+* Scalable API Design
 
 ---
-
 ## 🛠️ Tech Stack
 
 - **Backend:** FastAPI
@@ -116,21 +132,41 @@ http://127.0.0.1:8000
 
 ---
 
-## 📌 API Endpoints
+### 📌 **API Endpoints**
 
-### 🔐 Authentication
+#### 🔐 Authentication
 
-- `POST /auth/register` → Register a new user
-- `POST /auth/login` → Login user
+* **POST /auth/register** → Register a new user
+* **POST /auth/login** → Login user
 
-### 👨‍⚕️ Doctors
 
-- `POST /doctors/` → Create doctor
-- `GET /doctors/` → Get all doctors
-- `PUT /doctors/{id}` → Update doctor
-- `DELETE /doctors/{id}` → Delete doctor
+#### 👨‍⚕️ Doctors
+
+* **POST /doctors/** → Create doctor
+* **GET /doctors/** → Get all doctors
+* **PUT /doctors/{id}** → Update doctor
+* **DELETE /doctors/{id}** → Delete doctor
+
+
+#### 🗓️ Doctor Schedule
+
+* **POST /doctors/{doctor_id}/schedule** → Add schedule for a doctor
+* **POST /schedules** → Create schedule entry
+
+
+#### 🔍 Search
+
+* **GET /doctors/search** → Search doctors by specialization
+
+
+#### 📅 Appointments
+
+* **POST /appointments** → Book appointment
+* **DELETE /appointments/{id}** → Cancel appointment
+* **GET /appointments/patient/{id}** → Get patient appointment history
 
 ---
+
 
 ## 🧪 Testing
 
