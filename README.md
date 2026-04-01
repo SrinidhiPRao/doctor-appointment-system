@@ -20,12 +20,6 @@ This project is a backend system built using **FastAPI** that enables patients t
 - Update Doctor
 - Delete Doctor
 
-### 📅 Upcoming Features
-
-- Doctor Schedule Management
-- Search Doctors by Specialization
-- Appointment Booking & Cancellation
-- Patient Appointment History
 
 ### ✅ Additional Capabilities
 
@@ -81,7 +75,7 @@ hospital_appointment_api/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone <https://github.com/SrinidhiPRao/doctor-appointment-system>
+git clone https://github.com/SrinidhiPRao/doctor-appointment-system
 cd doctor-appointment-system
 ```
 
@@ -118,7 +112,7 @@ python -m app.main
 ```
 
 👉 Open API in your browser:
-http://127.0.0.1:8000/
+http://127.0.0.1:8000
 
 ---
 
