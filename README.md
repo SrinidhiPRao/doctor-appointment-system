@@ -62,8 +62,13 @@ hospital_appointment_api/
 │   └── routers/
 │       ├── auth_routes.py
 │       ├── doctor_routes.py
+│       └── appointment_routes.py
 │
 ├── tests/
+│   ├── auth_routes.py
+│   ├── doctor_routes.py
+│   └── appointment_routes.py
+│   
 ├── requirements.txt
 ├── Dockerfile
 ├── README.md
@@ -76,14 +81,14 @@ hospital_appointment_api/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone <your-repo-link>
-cd hospital_appointment_api
+git clone <https://github.com/SrinidhiPRao/doctor-appointment-system>
+cd doctor-appointment-system
 ```
 
 ### 2️⃣ Create Virtual Environment
 
 ```bash
-python -m venv venv
+python -m venv .venv
 ```
 
 Activate the environment:
@@ -91,13 +96,13 @@ Activate the environment:
 - **Windows:**
 
 ```bash
-venv\Scripts\activate
+.venv\Scripts\activate
 ```
 
 - **Mac/Linux:**
 
 ```bash
-source venv/bin/activate
+source .venv/bin/activate
 ```
 
 ### 3️⃣ Install Dependencies
@@ -109,11 +114,11 @@ pip install -r requirements.txt
 ### 4️⃣ Run the Application
 
 ```bash
-uvicorn app.main:app --reload
+python -m app.main
 ```
 
-👉 Open API Docs in your browser:
-http://127.0.0.1:8000/docs
+👉 Open API in your browser:
+http://127.0.0.1:8000/
 
 ---
 
@@ -141,7 +146,7 @@ http://127.0.0.1:8000/docs
 
 ---
 
-## 🐳 Docker Setup (Optional)
+## 🐳 Docker Setup
 
 ### Build Docker Image
 
@@ -160,7 +165,6 @@ docker run -p 8000:8000 hospital-api
 ## 📂 Submission Contents
 
 - ✔ Source Code (GitHub Repository)
-- ✔ SQLite Database (`test.db`)
 - ✔ Postman Collection
 - ✔ Pytest Test Cases
 - ✔ Dockerfile
@@ -189,26 +193,3 @@ It follows real-world development practices and is designed for future scalabili
 
 ---
 
-## 📌 Future Enhancements
-
-- Implement JWT Authentication
-- Add Role-Based Access Control
-- Pagination & Filtering
-- Migrate to PostgreSQL
-- Cloud Deployment (AWS / Azure)
-
----
-
-## ✅ Current Status
-
-- ✔ Core Backend Completed (Authentication + Doctor Management)
-- ⏳ Remaining Modules Under Development
-
----
-
-## 📞 Notes
-
-- Ensure all dependencies are installed before running the project
-- Refer to API documentation at `/docs` for endpoint testing
-
----
